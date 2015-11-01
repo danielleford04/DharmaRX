@@ -1,0 +1,133 @@
+/*----------------Layout--------*/
+
+  	.container {
+  		position: relative;
+  		background-color: #EBF4FA;
+  		border-radius: 20px;
+  		height: 100%;
+  	}
+
+    h1 {
+  		font-family: 'Raleway', sans-serif;
+  		color: #848787;
+  		padding: 20px;
+  		letter-spacing: 3px;
+  	}
+
+  	html {
+  	background-color: #848787;
+  	padding: 20px;
+  	}
+
+ /*---------Home Login Buttons --------*/
+
+
+ 	.sibuttonh {
+  		position: absolute;
+  		top: 15px;
+  		right: 150px;
+  		padding: 20px;
+      opacity: 0.85;
+
+  	}
+
+  	#sobuttonh {
+  		position: absolute;
+  		top: 35px;
+  		right: 35px;
+  		padding: 20px;
+  		font-family: sans-serif;
+  		font-size: 12px;
+  		padding: 10px;
+      opacity: 0.85;
+  	}
+
+ /*------------Home Hero--------------*/
+
+  	.tag {
+  		z-index: 1;
+  		font-family: 'Raleway', sans-serif;
+  		color: black;
+  		position: absolute;
+  		bottom: 200px;
+  		left: 35%;
+  		font-size: 24px;
+  		text-align: right;
+
+  	}
+
+  	.vis {
+      margin-top: 50px;
+  		position: relative;
+  	}
+
+  	.homeimg {
+  		width: 100%; 
+  		height: 400px;		
+  	}
+
+  	#stbutton {
+  		position: absolute;
+  		padding: 20px;
+  		font-family: sans-serif;
+  		font-size: 12px;
+  		padding: 10px;
+  		bottom: 125px;
+  		left: 40%;
+  		opacity: 0.7;
+  		margin-right:5px;
+  	}
+
+  	#inbutton {
+  		position: absolute;
+  		padding: 20px;
+  		font-family: sans-serif;
+  		font-size: 12px;
+  		padding: 10px;
+  		bottom: 125px;
+  		left: 53%;
+  		opacity: 0.7;
+  		margin-left: 5px;
+  	}
+
+/*---------------Login Page--------*/
+
+.sibuttonl {
+  		position: absolute;
+  		bottom: 100px;
+  		left: 45%;
+  		padding: 20px;
+  		opacity: 0.7;
+}
+
+/*-------------Chat Page ---------*/
+
+  	.video {
+  		display: inline-block;
+  	}
+ 	#myPublisherDiv {
+ 		z-index: 2;
+  		position: absolute;
+  		right: 15px;
+  		bottom: 15px;
+  		padding: 20px;
+  	}
+
+  	#subscribersDiv {
+  		left: 15px;
+  		position: absolute;
+  		bottom: 15px;
+      z-index: 1;
+  	}
+
+    .end {
+      background-color: #EE3229;
+      color: white;
+      height: 40px;
+      width: 75px;
+      z-index: 10;
+      position: absolute;
+      right: 30;
+      top: 20;
+
+    }
