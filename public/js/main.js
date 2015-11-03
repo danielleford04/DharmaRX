@@ -12,17 +12,17 @@ angular.module('App')
 	});
   }
 
-$timeout(function(){
-	console.log(gapi.auth2)
-	var auth2 = gapi.auth2.getAuthInstance();
+// $timeout(function(){
+// 	console.log(gapi.auth2)
+// 	var auth2 = gapi.auth2.getAuthInstance();
 
-	console.log(auth2, auth2.isSignedIn.get())
-	if (auth2.isSignedIn.get() == false){
+// 	console.log(auth2, auth2.isSignedIn.get())
+// 	if (auth2.isSignedIn.get() == false){
 
-  		window.location.href = '/login'
-	}
+//   		window.location.href = '/login'
+// 	}
 	
-}, 2500)
+// }, 2500)
 
 
 
