@@ -70,9 +70,11 @@ angular.module('App')
 	 //        // Session has been disconnected. Include any clean up code here
 	 //    });
 	})
+$scope.endButton = true;
 $scope.endCallForm = false;
 $scope.endCall= function() {
    		$scope.endCallForm= !$scope.endCallForm;
+   		$scope.endButton= !$scope.endButton;
 		$scope.session.disconnect();
   //  				function disconnect() {
 	 //   		session.disconnect();
@@ -130,10 +132,13 @@ angular.module('App')
 	 //    });
 	})
 
+$scope.endButton = true;
 $scope.endCallForm = false;
 $scope.endCall= function() {
    		$scope.endCallForm= !$scope.endCallForm;
+   		$scope.endButton= !$scope.endButton;
 		$scope.session.disconnect();
+
   //  				function disconnect() {
 	 //   		session.disconnect();
 		// }

@@ -11,7 +11,7 @@
   	<a href="/"><h1>DharmaRX</h1></a>
     <div class="video" id='myPublisherDiv'></div> 
     <div class="video" id='subscribersDiv'></div> 
-    <div> <button ng-click="endCall()" class="end">End Call</button></div>
+    <div> <button ng-click="endCall()" ng-show="endButton" class="end">End Call</button></div>
     <div ng-show="endCallForm" class="endCallDiv">
         <p><i>Call ended.</i></p>
         <p>Thank you for using DharmaRX!</p>
