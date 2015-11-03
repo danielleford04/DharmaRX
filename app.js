@@ -29,6 +29,10 @@ app.get('/', function(req, res){
   res.sendFile('/html/index.html', { root: './public'})
 });
 
+app.get('googlea0716b7179ac2b53.html', function(req, res){
+  res.sendFile('/html/googlea0716b7179ac2b53.html', { root: './public'})
+});
+
 app.get('/index', function(req, res){
   res.sendFile('/html/index.html', { root: './public'})
 });
