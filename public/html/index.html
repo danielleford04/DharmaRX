@@ -1,24 +1,25 @@
-<html>
+<html ng-app="App">
 <head>
 	 <meta name="google-signin-client_id" content="237308333198-uv15b9ojd02d5oht9pgr4bdi40adlbb7.apps.googleusercontent.com">
 	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../css/main.css" />
+	<script src="https://apis.google.com/js/platform.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="../css/main.css" />
 	<title></title>
 </head>
-<body>
+<body ng-controller="indexController">
 	<div class="container">
-		<h1>DharmaRX</h1>
+		<a href="/"><h1>DharmaRX</h1></a>
 		<span class="g-signin2 sibuttonh" style="display:inline-block" data-onsuccess="onSignIn"></span>
-		<a href="/login"><span style="height:36px;width:120px;border:2px;display:inline-block" class="abcRioButton abcRioButtonLightBlue" id="sobuttonh" href="#" onclick="signOut();">Sign out</span></a>
+		<a href=""><span style="height:36px;width:120px;border:2px;display:inline-block" class="abcRioButton abcRioButtonLightBlue" id="sobuttonh" href="#" onclick="signOut();">Sign out</span></a>
 		<div class="vis">
 			<img src="../images/medpic.png" alt="mahamudra" class="homeimg">
 			<span class="tag">Connect with mindfulness-based support <br> now. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
-			<a href="/chat"><button style="height:36px;width:120px;border:2px;display:inline-block" class="abcRioButton abcRioButtonLightBlue" id="stbutton" >Seeking Support</button></a>
-			<a href="/chat"><span style="height:36px;width:120px;border:2px;display:inline-block" class="abcRioButton abcRioButtonLightBlue" id="inbutton">Offering Support</span></a>
+			<a href="/chat"><button ng-click="student()" style="height:36px;width:120px;border:2px;display:inline-block" class="abcRioButton abcRioButtonLightBlue" id="stbutton" >Seeking Support</button></a>
+			<a href="/chati"><span ng-click="instructor()" style="height:36px;width:120px;border:2px;display:inline-block" class="abcRioButton abcRioButtonLightBlue" id="inbutton">Offering Support</span></a>
 		</div>
 	</div>
 
-<script src="../js/index.js"></script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+<script src="../js/main.js"></script>
 </body>
 </html>

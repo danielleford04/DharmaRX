@@ -14,6 +14,10 @@
   		letter-spacing: 3px;
   	}
 
+    a {
+      text-decoration: none;
+    }
+
   	html {
   	background-color: #848787;
   	padding: 20px;
@@ -105,6 +109,7 @@
   	.video {
   		display: inline-block;
   	}
+
  	#myPublisherDiv {
  		z-index: 2;
   		position: absolute;
@@ -132,3 +137,25 @@
       border-radius: 5px;
 
     }
+    /*------------ End Call -------*/
+
+    .endCallDiv {
+      background-color: #E6EFF5;
+      font-size: 12px;
+      border: 3px solid #848787;
+      border-radius: 5px;
+      padding: 10px;
+      width: 330px;
+      margin: auto;
+      color: #848787;
+      font-size: 28px;
+      text-align: center;
+      font-family: 'Raleway', sans-serif;
+}
+
+.returnButton {
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  background-color: #F8F8F8;
+}

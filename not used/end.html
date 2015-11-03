@@ -6,20 +6,24 @@
     <link rel="stylesheet" href="../css/main.css" />
     <script src='//static.opentok.com/v2/js/opentok.min.js'></script>
   </head> 
-  <body ng-controller="chatController"> 
+  <body ng-controller="indexController"> 
   	<div class="container">
   	<a href="/"><h1>DharmaRX</h1></a>
-    <div class="video" id='myPublisherDiv'></div> 
-    <div class="video" id='subscribersDiv'></div> 
-    <div> <button ng-click="endCall()" class="end">End Call</button></div>
-    <div ng-show="endCallForm" class="endCallDiv">
-        <p><i>Call ended.</i></p>
-        <p>Thank you for using DharmaRX!</p>
-        <a href="/"><button class="returnButton">Return to Home</button></a>
-    </div>
-   </div>
-            
+    <div class="endContent">
+        <p>Call ended.</p>
+        <button>Return to Home</button>
+    </div>        
     <script src="../js/main.js"></script>
 
   </body> 
 </html>    
+
+
+
+<!-- end call page. lightbox thing? or separate page? 
+ideally: 
+Call ended
+thanks....
+feedback?
+Link: offer dana 
+link back to home-->
