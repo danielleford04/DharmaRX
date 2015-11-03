@@ -60,10 +60,10 @@ app.get('/end', function(req, res){
 
 //  --------- Student Route - get sessionID, token, push sessionID to array
 app.get("/getvalues",function(request,response){
-    if(request.session.token) {
-      response.send({sessionId: request.session.sessionId, token: request.session.token})
-    }
-    else {
+    // if(request.session.token) {
+    //   response.send({sessionId: request.session.sessionId, token: request.session.token})
+    // }
+    // else {
         opentok.createSession({}, function(error, session) {
             if (error) {
              console.log("Error creating session:", error)
@@ -84,7 +84,7 @@ app.get("/getvalues",function(request,response){
           console.log('super inside1', sessionArray)
           });
         console.log('inside1', sessionArray)
-        }
+        // }
 })
 console.log('outside1', sessionArray)
 

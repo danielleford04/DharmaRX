@@ -50,7 +50,7 @@ angular.module('App')
 		$scope.session = OT.initSession(apiKey, sessionId); 
 		$scope.session.on({ 
 		    streamCreated: function(event) { 
-		        $scope.session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append', width: 900, height:600}); 
+		        $scope.session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append', width: 900, height:500}); 
 		    } 
 		}); 
 		$scope.session.connect(token, function(error) {
@@ -109,7 +109,7 @@ angular.module('App')
 		$scope.session = OT.initSession(apiKey, sessionId); 
 		$scope.session.on({ 
 		    streamCreated: function(event) { 
-		        $scope.session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append', width: 900, height:600}); 
+		        $scope.session.subscribe(event.stream, 'subscribersDiv', {insertMode: 'append', width: 900, height:500}); 
 		    } 
 		}); 
 		$scope.session.connect(token, function(error) {
