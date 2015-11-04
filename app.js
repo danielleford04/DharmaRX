@@ -94,11 +94,11 @@ var sessionIdObj = sessionArray.pop()
 var sessionId = sessionIdObj.sessionId
 console.log('2nd route', sessionId)
 
-    if(request.session.token) {
-      response.send({sessionId: sessionId, token: request.session.token})
-      // console.log(sessionId)
-    }
-    else {
+    // if(request.session.token) {
+    //   response.send({sessionId: sessionId, token: request.session.token})
+    //   // console.log(sessionId)
+    // }
+    // else {
         opentok.createSession({}, function(error, session) {
             if (error) {
              console.log("Error creating session:", error)
@@ -118,10 +118,11 @@ console.log('2nd route', sessionId)
           sessionId=''
           });
         // console.log('inside2', sessionArray)
-        }
+        // }
         // console.log('inside5', sessionArray)
 })
 // console.log('outside2', sessionArray)
+
 
 // Creating Server and Listening for Connections \\
 var port = 3000

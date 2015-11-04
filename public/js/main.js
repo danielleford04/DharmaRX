@@ -122,6 +122,7 @@ angular.module('App')
 		    }
 		});
 
+//send request to server to clear session 
 		// function disconnect() {
 	 //   		session.disconnect();
 		// }
